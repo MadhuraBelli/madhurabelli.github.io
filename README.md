@@ -1,11 +1,3 @@
-
-## Purpose
-
-This repo is the source for a personal portfolio that:
-- Highlights projects and technical interests.
-- Hosts a narrative case study that frames human physiology as a distributed system.
-- Serves a lightweight, client-side dashboard backed by a local JSON sample dataset.
-
 ## Local development
 
 ### Prerequisites
