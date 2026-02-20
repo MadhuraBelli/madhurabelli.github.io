@@ -400,3 +400,19 @@ footer {
     padding: 14px;
   }
 }
+
+.architecture-figure {
+  margin: 14px 0 0;
+}
+
+.architecture-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #273a5c;
+  background: #0c1527;
+}
+
+.architecture-figure figcaption {
+  margin-top: 8px;
+}
