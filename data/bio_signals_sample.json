@@ -1,0 +1,317 @@
+[
+  {
+    "date": "2025-01-01",
+    "strain": 55.9,
+    "sleepHours": 6.93,
+    "hrv": 71.0,
+    "restingHr": 55.5
+  },
+  {
+    "date": "2025-01-02",
+    "strain": 69.8,
+    "sleepHours": 6.62,
+    "hrv": 61.5,
+    "restingHr": 59.8
+  },
+  {
+    "date": "2025-01-03",
+    "strain": 66.9,
+    "sleepHours": 6.57,
+    "hrv": 62.2,
+    "restingHr": 57.5
+  },
+  {
+    "date": "2025-01-04",
+    "strain": 64.4,
+    "sleepHours": 7.59,
+    "hrv": 66.2,
+    "restingHr": 57.1
+  },
+  {
+    "date": "2025-01-05",
+    "strain": 55.0,
+    "sleepHours": 8.12,
+    "hrv": 73.9,
+    "restingHr": 56.2
+  },
+  {
+    "date": "2025-01-06",
+    "strain": 52.0,
+    "sleepHours": 6.77,
+    "hrv": 73.3,
+    "restingHr": 56.0
+  },
+  {
+    "date": "2025-01-07",
+    "strain": 45.1,
+    "sleepHours": 6.88,
+    "hrv": 71.1,
+    "restingHr": 57.3
+  },
+  {
+    "date": "2025-01-08",
+    "strain": 56.9,
+    "sleepHours": 7.57,
+    "hrv": 72.4,
+    "restingHr": 56.7
+  },
+  {
+    "date": "2025-01-09",
+    "strain": 72.6,
+    "sleepHours": 6.17,
+    "hrv": 59.4,
+    "restingHr": 59.1
+  },
+  {
+    "date": "2025-01-10",
+    "strain": 77.2,
+    "sleepHours": 6.56,
+    "hrv": 61.3,
+    "restingHr": 61.3
+  },
+  {
+    "date": "2025-01-11",
+    "strain": 67.2,
+    "sleepHours": 6.8,
+    "hrv": 68.6,
+    "restingHr": 60.1
+  },
+  {
+    "date": "2025-01-12",
+    "strain": 52.9,
+    "sleepHours": 7.56,
+    "hrv": 72.6,
+    "restingHr": 58.4
+  },
+  {
+    "date": "2025-01-13",
+    "strain": 51.4,
+    "sleepHours": 7.13,
+    "hrv": 75.4,
+    "restingHr": 55.0
+  },
+  {
+    "date": "2025-01-14",
+    "strain": 50.6,
+    "sleepHours": 7.84,
+    "hrv": 71.0,
+    "restingHr": 56.1
+  },
+  {
+    "date": "2025-01-15",
+    "strain": 57.3,
+    "sleepHours": 7.7,
+    "hrv": 73.6,
+    "restingHr": 57.6
+  },
+  {
+    "date": "2025-01-16",
+    "strain": 78.5,
+    "sleepHours": 6.55,
+    "hrv": 63.9,
+    "restingHr": 61.5
+  },
+  {
+    "date": "2025-01-17",
+    "strain": 77.9,
+    "sleepHours": 6.6,
+    "hrv": 65.4,
+    "restingHr": 62.9
+  },
+  {
+    "date": "2025-01-18",
+    "strain": 69.2,
+    "sleepHours": 7.35,
+    "hrv": 63.7,
+    "restingHr": 60.1
+  },
+  {
+    "date": "2025-01-19",
+    "strain": 59.3,
+    "sleepHours": 8.19,
+    "hrv": 74.9,
+    "restingHr": 56.3
+  },
+  {
+    "date": "2025-01-20",
+    "strain": 48.7,
+    "sleepHours": 7.7,
+    "hrv": 70.1,
+    "restingHr": 55.8
+  },
+  {
+    "date": "2025-01-21",
+    "strain": 48.9,
+    "sleepHours": 6.88,
+    "hrv": 68.0,
+    "restingHr": 57.7
+  },
+  {
+    "date": "2025-01-22",
+    "strain": 59.5,
+    "sleepHours": 7.07,
+    "hrv": 68.3,
+    "restingHr": 59.6
+  },
+  {
+    "date": "2025-01-23",
+    "strain": 69.9,
+    "sleepHours": 6.75,
+    "hrv": 65.7,
+    "restingHr": 61.4
+  },
+  {
+    "date": "2025-01-24",
+    "strain": 81.5,
+    "sleepHours": 7.22,
+    "hrv": 61.6,
+    "restingHr": 60.8
+  },
+  {
+    "date": "2025-01-25",
+    "strain": 68.4,
+    "sleepHours": 7.68,
+    "hrv": 72.0,
+    "restingHr": 57.4
+  },
+  {
+    "date": "2025-01-26",
+    "strain": 54.0,
+    "sleepHours": 7.05,
+    "hrv": 68.5,
+    "restingHr": 57.1
+  },
+  {
+    "date": "2025-01-27",
+    "strain": 51.3,
+    "sleepHours": 7.09,
+    "hrv": 67.5,
+    "restingHr": 56.3
+  },
+  {
+    "date": "2025-01-28",
+    "strain": 51.3,
+    "sleepHours": 7.55,
+    "hrv": 76.4,
+    "restingHr": 57.3
+  },
+  {
+    "date": "2025-01-29",
+    "strain": 63.9,
+    "sleepHours": 7.63,
+    "hrv": 70.9,
+    "restingHr": 56.3
+  },
+  {
+    "date": "2025-01-30",
+    "strain": 79.4,
+    "sleepHours": 7.24,
+    "hrv": 67.1,
+    "restingHr": 62.2
+  },
+  {
+    "date": "2025-01-31",
+    "strain": 75.8,
+    "sleepHours": 6.52,
+    "hrv": 59.9,
+    "restingHr": 61.3
+  },
+  {
+    "date": "2025-02-01",
+    "strain": 64.1,
+    "sleepHours": 6.45,
+    "hrv": 63.8,
+    "restingHr": 57.4
+  },
+  {
+    "date": "2025-02-02",
+    "strain": 55.1,
+    "sleepHours": 6.78,
+    "hrv": 65.6,
+    "restingHr": 55.9
+  },
+  {
+    "date": "2025-02-03",
+    "strain": 44.4,
+    "sleepHours": 7.25,
+    "hrv": 70.1,
+    "restingHr": 57.3
+  },
+  {
+    "date": "2025-02-04",
+    "strain": 53.0,
+    "sleepHours": 6.92,
+    "hrv": 68.6,
+    "restingHr": 56.4
+  },
+  {
+    "date": "2025-02-05",
+    "strain": 60.7,
+    "sleepHours": 6.88,
+    "hrv": 71.1,
+    "restingHr": 60.4
+  },
+  {
+    "date": "2025-02-06",
+    "strain": 72.6,
+    "sleepHours": 6.8,
+    "hrv": 61.4,
+    "restingHr": 58.3
+  },
+  {
+    "date": "2025-02-07",
+    "strain": 73.5,
+    "sleepHours": 6.32,
+    "hrv": 65.7,
+    "restingHr": 58.9
+  },
+  {
+    "date": "2025-02-08",
+    "strain": 61.8,
+    "sleepHours": 7.78,
+    "hrv": 70.7,
+    "restingHr": 56.3
+  },
+  {
+    "date": "2025-02-09",
+    "strain": 55.5,
+    "sleepHours": 6.74,
+    "hrv": 69.5,
+    "restingHr": 59.7
+  },
+  {
+    "date": "2025-02-10",
+    "strain": 51.5,
+    "sleepHours": 7.74,
+    "hrv": 71.4,
+    "restingHr": 55.8
+  },
+  {
+    "date": "2025-02-11",
+    "strain": 45.4,
+    "sleepHours": 7.86,
+    "hrv": 75.5,
+    "restingHr": 56.7
+  },
+  {
+    "date": "2025-02-12",
+    "strain": 58.0,
+    "sleepHours": 7.03,
+    "hrv": 72.0,
+    "restingHr": 59.9
+  },
+  {
+    "date": "2025-02-13",
+    "strain": 74.8,
+    "sleepHours": 7.28,
+    "hrv": 68.0,
+    "restingHr": 61.2
+  },
+  {
+    "date": "2025-02-14",
+    "strain": 69.6,
+    "sleepHours": 6.7,
+    "hrv": 64.1,
+    "restingHr": 57.5
+  }
+]
