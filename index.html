@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Madhura Belli | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhura Belli | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Hi, I'm Madhura 👋🏽</h1>
-    <p>Software Engineer | Data & Technology Enthusiast</p>
-</header>
+  <div class="site-shell">
+    <header class="page-header">
+      <h1>Hi, I'm Madhura 👋🏽</h1>
+      <p>Software Engineer | Data &amp; Technology Enthusiast</p>
+    </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I work at Oracle Health building AI-integrated EHR systems...</p>
-</section>
+    <main>
+      <section class="panel">
+        <h2>About Me</h2>
+        <p>
+          I work at Oracle Health building AI-integrated EHR systems and enjoy translating complex domains into
+          resilient, explainable software.
+        </p>
+      </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>Clinical Event Classification Library</li>
-        <li>Observation Grouping in EHR</li>
-        <li>Health Data Dashboard</li>
-        <li>
-            <a href="projects/body-distributed-system.html">The Body as a Distributed System</a>
-            <span class="muted">(new: project page + dashboard MVP scaffold)</span>
-        </li>
-    </ul>
-</section>
+      <section class="panel">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Clinical Event Classification Library</h3>
+            <p class="muted">Library patterns for robust clinical event handling.</p>
+          </article>
+          <article class="project-card">
+            <h3>Observation Grouping in EHR</h3>
+            <p class="muted">Improved signal-to-noise in health data workflows.</p>
+          </article>
+          <article class="project-card">
+            <h3>Health Data Dashboard</h3>
+            <p class="muted">Decision-support dashboard with quality indicators.</p>
+          </article>
+          <article class="project-card project-card-link">
+            <h3>The Body as a Distributed System</h3>
+            <p class="muted">A systems-thinking project page with an SRE-style dashboard scaffold.</p>
+            <a class="button-link" href="projects/body-distributed-system.html">Open project page</a>
+          </article>
+        </div>
+      </section>
+    </main>
 
-<footer>
-    <p>© 2025 Madhura Belli</p>
-</footer>
+    <footer>
+      <p>© 2025 Madhura Belli</p>
+    </footer>
+  </div>
 </body>
 </html>

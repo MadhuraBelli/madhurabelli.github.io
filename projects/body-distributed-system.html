@@ -7,77 +7,108 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header class="hero hero-project">
-    <p class="eyebrow">Project</p>
-    <h1>The Body as a Distributed System</h1>
-    <p class="subtitle">A systems-thinking exploration of physiology through the lens of reliability engineering.</p>
-    <p class="status-pill">Status: MVP Scaffold</p>
-  </header>
+  <div class="site-shell">
+    <header class="hero hero-project">
+      <p class="eyebrow">Project</p>
+      <h1>The Body as a Distributed System</h1>
+      <p class="subtitle">Modeling physiology as a fault-tolerant, event-driven platform.</p>
+      <p class="status-pill">Status: Step 1 Scaffold</p>
+    </header>
 
-  <main>
-    <section>
-      <h2>Project Overview</h2>
-      <p>
-        This project frames the human body as a distributed platform where organs are services, signals are events,
-        and homeostasis is reliability. The goal is to make biological behavior easier to reason about using familiar
-        software operations metaphors.
-      </p>
-    </section>
+    <main>
+      <section class="panel">
+        <h2>Overview</h2>
+        <p>
+          This project treats organs as services, hormones and neural signals as messages, and homeostasis as a shared
+          reliability objective. The goal is to build intuition for biological behavior using distributed systems ideas.
+        </p>
+      </section>
 
-    <section>
-      <h2>Bio SRE Console (Dashboard MVP)</h2>
-      <p class="muted">Static data first — interactive controls and real data plumbing are planned for later steps.</p>
+      <section class="panel">
+        <h2>Architecture</h2>
+        <p>
+          The nervous system acts as a low-latency control plane, the endocrine system provides durable asynchronous
+          signaling, and organs function as specialized compute nodes with local autonomy and global dependencies.
+        </p>
+      </section>
 
-      <div class="console-shell">
-        <div class="console-topbar">
-          <span>Bio SRE Console</span>
-          <span class="console-env">env: human-prod</span>
+      <section class="panel">
+        <h2>Observability</h2>
+        <p>
+          Vital signs, blood chemistry, and symptom reports map to telemetry streams (metrics, traces, and logs). The
+          dashboard below uses placeholder data to show the shape of the future monitoring surface.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Reliability</h2>
+        <p>
+          Redundancy, feedback loops, and graceful degradation are framed as core reliability patterns. Failure modes
+          include delayed signaling, overload states, and cascading compensations.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Dashboard</h2>
+        <p class="muted">Placeholder components with sample charts (fake data).</p>
+
+        <div class="console-shell">
+          <div class="console-topbar">
+            <span>Bio SRE Console</span>
+            <span class="console-env">env: human-prod</span>
+          </div>
+
+          <div class="kpi-grid">
+            <article class="kpi-card"><h3>Heart Rate</h3><p class="kpi-value">72 bpm</p><p class="kpi-meta">SLO: 60-100</p></article>
+            <article class="kpi-card"><h3>SpO₂</h3><p class="kpi-value">98%</p><p class="kpi-meta">SLO: &gt;95%</p></article>
+            <article class="kpi-card"><h3>Respiration</h3><p class="kpi-value">15 rpm</p><p class="kpi-meta">SLO: 12-20</p></article>
+            <article class="kpi-card"><h3>Stress Index</h3><p class="kpi-value">0.41</p><p class="kpi-meta">steady</p></article>
+          </div>
+
+          <div class="chart-grid">
+            <article class="chart-card">
+              <h3>Latency by Subsystem (ms)</h3>
+              <div class="bar-row"><span>Neural</span><div class="bar"><i style="width: 28%"></i></div><em>28</em></div>
+              <div class="bar-row"><span>Cardio</span><div class="bar"><i style="width: 44%"></i></div><em>44</em></div>
+              <div class="bar-row"><span>Endocrine</span><div class="bar"><i style="width: 63%"></i></div><em>63</em></div>
+            </article>
+            <article class="chart-card">
+              <h3>Error Budget Burn</h3>
+              <div class="sparkline" aria-hidden="true"><span></span></div>
+              <p class="kpi-meta">Last 60 min: 8% burn, within target.</p>
+            </article>
+          </div>
+
+          <div class="log-panel">
+            <h3>Event Log</h3>
+            <ul>
+              <li><code>12:01:03</code> autonomic-controller scaled heart-rate response +3%</li>
+              <li><code>12:02:17</code> glucose-router accepted nutrient payload from digestive-edge</li>
+              <li><code>12:03:41</code> thermoregulator reconciled temperature drift (36.9°C)</li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="kpi-grid">
-          <article class="kpi-card">
-            <h3>Heart Rate</h3>
-            <p class="kpi-value">72 bpm</p>
-            <p class="kpi-meta">SLO: 60-100 bpm</p>
-          </article>
-          <article class="kpi-card">
-            <h3>Blood Oxygen</h3>
-            <p class="kpi-value">98%</p>
-            <p class="kpi-meta">SLO: &gt;95%</p>
-          </article>
-          <article class="kpi-card">
-            <h3>Respiration</h3>
-            <p class="kpi-value">15 rpm</p>
-            <p class="kpi-meta">SLO: 12-20 rpm</p>
-          </article>
-          <article class="kpi-card">
-            <h3>System Load</h3>
-            <p class="kpi-value">Moderate</p>
-            <p class="kpi-meta">Context: post-lunch</p>
-          </article>
-        </div>
+      <section class="panel">
+        <h2>Findings</h2>
+        <p>
+          Even this lightweight model highlights how cross-system coupling can obscure root cause. Context-rich
+          telemetry and subsystem boundaries are essential for meaningful diagnosis.
+        </p>
+      </section>
 
-        <div class="log-panel">
-          <h3>Event Log</h3>
-          <ul>
-            <li><code>12:01:03</code> autonomic-controller scaled heart-rate response +3%</li>
-            <li><code>12:01:10</code> glucose-router accepted nutrient payload from digestive-edge</li>
-            <li><code>12:02:04</code> thermoregulator reconciled temperature drift (36.9°C)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <section class="panel">
+        <h2>Next</h2>
+        <ul>
+          <li>Replace static dashboard placeholders with a small local data model.</li>
+          <li>Add subsystem filters and incident timeline interactions.</li>
+          <li>Expand with architecture and failure-mode diagrams.</li>
+        </ul>
+      </section>
 
-    <section class="todo-block">
-      <h2>TODO (Next Iterations)</h2>
-      <ul>
-        <li>Replace hardcoded KPI/log entries with static JSON + template rendering.</li>
-        <li>Add subsystem filters (cardio / neural / immune) and state badges.</li>
-        <li>Introduce architecture diagram and failure-mode narrative.</li>
-      </ul>
-    </section>
-
-    <p><a href="../index.html">← Back to portfolio</a></p>
-  </main>
+      <p><a href="../index.html">← Back to portfolio</a></p>
+    </main>
+  </div>
 </body>
 </html>
