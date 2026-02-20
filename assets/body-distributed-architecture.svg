@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Body as Distributed System Architecture</title>
+  <desc id="desc">A simple architecture diagram mapping control plane, messaging, and organ services to distributed systems concepts.</desc>
+  <defs>
+    <style>
+      .bg { fill: #0c1527; }
+      .card { fill: #121d33; stroke: #2f456b; stroke-width: 2; rx: 12; }
+      .title { fill: #dce7fa; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 700; }
+      .label { fill: #c2d3f0; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; }
+      .sub { fill: #9ca9c0; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; }
+      .line { stroke: #66d9ff; stroke-width: 2.5; marker-end: url(#arrow); }
+      .line2 { stroke: #ffd36e; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7fc0ff"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="920" height="420" rx="14"/>
+  <text class="title" x="28" y="36">Body as a Distributed System (Simplified)</text>
+
+  <rect class="card" x="40" y="80" width="240" height="120"/>
+  <text class="label" x="58" y="112">Control Plane</text>
+  <text class="sub" x="58" y="138">Nervous System</text>
+  <text class="sub" x="58" y="158">Low-latency feedback loops</text>
+
+  <rect class="card" x="340" y="80" width="240" height="120"/>
+  <text class="label" x="358" y="112">Message Bus</text>
+  <text class="sub" x="358" y="138">Hormones + Neural Signals</text>
+  <text class="sub" x="358" y="158">Asynchronous coordination</text>
+
+  <rect class="card" x="640" y="80" width="240" height="120"/>
+  <text class="label" x="658" y="112">Service Cluster</text>
+  <text class="sub" x="658" y="138">Organs / Subsystems</text>
+  <text class="sub" x="658" y="158">Specialized compute + resilience</text>
+
+  <rect class="card" x="220" y="260" width="220" height="110"/>
+  <text class="label" x="238" y="292">Observability</text>
+  <text class="sub" x="238" y="317">Vitals, labs, symptoms</text>
+  <text class="sub" x="238" y="337">Metrics, traces, logs</text>
+
+  <rect class="card" x="500" y="260" width="220" height="110"/>
+  <text class="label" x="518" y="292">Reliability Objective</text>
+  <text class="sub" x="518" y="317">Homeostasis / SLO</text>
+  <text class="sub" x="518" y="337">Stability under load</text>
+
+  <line class="line" x1="280" y1="140" x2="340" y2="140"/>
+  <line class="line" x1="580" y1="140" x2="640" y2="140"/>
+  <line class="line2" x1="520" y1="200" x2="600" y2="260"/>
+  <line class="line2" x1="400" y1="200" x2="340" y2="260"/>
+  <line class="line" x1="440" y1="315" x2="500" y2="315"/>
+</svg>
