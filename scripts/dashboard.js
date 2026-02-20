@@ -89,6 +89,64 @@ function deriveStatus(latest) {
   return 'STABLE';
 }
 
+function deriveAlerts(latest) {
+  const alerts = [];
+
+  if (latest.loadIndex > 72 && latest.readiness < 45) {
+    alerts.push({
+      severity: 'critical',
+      title: 'Overload risk',
+      message: 'Load and readiness crossed the critical threshold. Shift to active recovery mode today.',
+    });
+  }
+
+  if (latest.recoveryDebt7d > 8) {
+    alerts.push({
+      severity: 'warning',
+      title: 'Recovery debt elevated',
+      message: `7-day debt is ${latest.recoveryDebt7d.toFixed(1)}h. Prioritize sleep to avoid compounding fatigue.`,
+    });
+  }
+
+  if (latest.readiness < 60) {
+    alerts.push({
+      severity: 'warning',
+      title: 'Readiness below target',
+      message: `Readiness is ${latest.readiness.toFixed(1)}. Keep plans flexible and reduce optional strain.`,
+    });
+  }
+
+  if (latest.signalStability7d < 70) {
+    alerts.push({
+      severity: 'info',
+      title: 'Signal variability up',
+      message: 'Control signals are noisier than usual. Favor consistent routines for 48 hours.',
+    });
+  }
+
+  if (alerts.length === 0) {
+    alerts.push({
+      severity: 'ok',
+      title: 'All systems nominal',
+      message: 'No active reliability alerts. Keep the current rhythm and continue routine observability.',
+    });
+  }
+
+  return alerts;
+}
+
+function renderAlerts(container, alerts) {
+  container.innerHTML = alerts
+    .map(
+      (alert) => `
+        <li class="alert-item" data-severity="${alert.severity}">
+          <p><strong>${alert.title}:</strong> ${alert.message}</p>
+        </li>
+      `,
+    )
+    .join('');
+}
+
 async function initDashboard() {
   const response = await fetch('../data/bio_signals_sample.json');
   const raw = await response.json();
@@ -186,9 +244,11 @@ async function initDashboard() {
   statusEl.dataset.status = status.toLowerCase();
 
   document.getElementById('metric-readiness').textContent = latest.readiness.toFixed(1);
-  document.getElementById('metric-load-index').textContent = latest.loadIndex.toFixed(1);
   document.getElementById('metric-debt').textContent = latest.recoveryDebt7d.toFixed(1);
   document.getElementById('metric-stability').textContent = latest.signalStability7d.toFixed(1);
+  document.getElementById('metric-load-note').textContent = `Load Index: ${latest.loadIndex.toFixed(1)}`;
+
+  renderAlerts(document.getElementById('alerts-list'), deriveAlerts(latest));
 }
 
 initDashboard();
