@@ -1,6 +1,3 @@
-# Madhura Belli Portfolio
-
-A static portfolio website showcasing selected software and systems-thinking projects, including **The Body as a Distributed System** case study and dashboard prototype.
 
 ## Purpose
 
