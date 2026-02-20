@@ -17,7 +17,8 @@ body {
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   background: radial-gradient(circle at 20% 0%, #101a2c, var(--bg) 45%);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 .site-shell {
@@ -119,7 +120,7 @@ a {
 
 .muted {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
 .console-shell {
@@ -136,11 +137,20 @@ a {
   padding: 10px 14px;
   background: #111a2f;
   border-bottom: 1px solid #23314f;
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
 .console-env {
   color: #9ac4ff;
+}
+
+.console-microcopy {
+  margin: 0;
+  padding: 10px 12px;
+  background: #101a2d;
+  border-bottom: 1px solid #223252;
+  color: #bcd2f3;
+  font-size: 0.95rem;
 }
 
 .kpi-grid {
@@ -148,6 +158,10 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 10px;
   padding: 12px;
+}
+
+.kpi-grid-top {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .kpi-card,
@@ -162,8 +176,8 @@ a {
 .chart-card h3,
 .log-panel h3 {
   margin: 0 0 8px;
-  font-size: 14px;
-  color: #afcbff;
+  font-size: 0.98rem;
+  color: #c5dbff;
 }
 
 .kpi-value {
@@ -174,8 +188,14 @@ a {
 
 .kpi-meta {
   margin-top: 6px;
-  font-size: 13px;
-  color: #9ca9c0;
+  font-size: 0.9rem;
+  color: #b4c0d7;
+}
+
+.kpi-inline-note {
+  padding: 0 12px 10px;
+  color: #c2d3f0;
+  font-size: 0.92rem;
 }
 
 .chart-grid {
@@ -221,9 +241,79 @@ a {
 }
 
 .axis-caption {
-  font-size: 12px;
-  color: #97a8c5;
+  font-size: 0.88rem;
+  color: #a8b9d5;
   margin: 8px 0 0;
+}
+
+.console-subpanel {
+  margin: 0 12px 12px;
+  padding: 12px;
+  border: 1px solid #2a3a5d;
+  border-radius: 10px;
+  background: #0f1a2f;
+}
+
+.alerts-list {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.alert-item {
+  border: 1px solid #34527f;
+  border-left-width: 4px;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #12203a;
+  color: #deebff;
+  font-size: 0.93rem;
+}
+
+.alert-item p {
+  margin: 0;
+}
+
+.alert-item[data-severity="critical"] {
+  border-left-color: #ff7e7e;
+}
+
+.alert-item[data-severity="warning"] {
+  border-left-color: #f8ca71;
+}
+
+.alert-item[data-severity="info"] {
+  border-left-color: #7fc0ff;
+}
+
+.alert-item[data-severity="ok"] {
+  border-left-color: #72dfa2;
+}
+
+.runbook-item {
+  border: 1px solid #2c4268;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #12203b;
+  margin-top: 8px;
+}
+
+.runbook-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #d3e4ff;
+}
+
+.runbook-item ol {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.runbook-item li {
+  margin-bottom: 6px;
+  color: #c4d5f3;
 }
 
 .corr-table {

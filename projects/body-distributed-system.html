@@ -58,12 +58,50 @@
             <span class="console-env">env: human-prod</span>
           </div>
 
-          <div class="kpi-grid">
+          <p class="console-microcopy">Daily brief: steady systems make bold work possible. Let's keep the biological cluster calm and fast.</p>
+
+          <div class="kpi-grid kpi-grid-top" aria-label="Top reliability metrics">
             <article class="kpi-card"><h3>Readiness</h3><p class="kpi-value"><span id="metric-readiness">--</span></p><p class="kpi-meta">0–100, higher is better</p></article>
-            <article class="kpi-card"><h3>Load Index</h3><p class="kpi-value"><span id="metric-load-index">--</span></p><p class="kpi-meta">Composite physiological load</p></article>
-            <article class="kpi-card"><h3>Recovery Debt 7d</h3><p class="kpi-value"><span id="metric-debt">--</span></p><p class="kpi-meta">Rolling sleep debt in hours</p></article>
-            <article class="kpi-card"><h3>Signal Stability 7d</h3><p class="kpi-value"><span id="metric-stability">--</span></p><p class="kpi-meta">Lower volatility = more stable</p></article>
+            <article class="kpi-card"><h3>Recovery Debt 7d</h3><p class="kpi-value"><span id="metric-debt">--</span>h</p><p class="kpi-meta">Sleep backlog to repay this week</p></article>
+            <article class="kpi-card"><h3>Signal Stability 7d</h3><p class="kpi-value"><span id="metric-stability">--</span></p><p class="kpi-meta">Higher means calmer control loops</p></article>
           </div>
+
+          <div class="kpi-inline-note" id="metric-load-note">Load Index: --</div>
+
+          <section class="console-subpanel" aria-labelledby="alerts-heading">
+            <h3 id="alerts-heading">Alerts</h3>
+            <p class="muted">Derived from the same reliability rules as status classification.</p>
+            <ul id="alerts-list" class="alerts-list"></ul>
+          </section>
+
+          <section class="console-subpanel" aria-labelledby="runbook-heading">
+            <h3 id="runbook-heading">Runbook</h3>
+            <p class="muted">Mitigation playbook for keeping human-prod healthy and predictable.</p>
+            <details class="runbook-item" open>
+              <summary>Stabilize load spikes</summary>
+              <ol>
+                <li>Reduce non-essential high-strain activity for 24 hours.</li>
+                <li>Hydrate and refuel within 60 minutes of exertion.</li>
+                <li>Run a low-intensity cooldown to shorten recovery latency.</li>
+              </ol>
+            </details>
+            <details class="runbook-item">
+              <summary>Pay down recovery debt</summary>
+              <ol>
+                <li>Schedule two earlier sleep windows this week.</li>
+                <li>Protect the final 90 minutes before bed from bright screens.</li>
+                <li>Avoid stacking high cognitive load after 9pm.</li>
+              </ol>
+            </details>
+            <details class="runbook-item">
+              <summary>Improve signal stability</summary>
+              <ol>
+                <li>Standardize wake time for the next 3 days.</li>
+                <li>Use short parasympathetic resets (walk, breath, stretch) every 3–4 hours.</li>
+                <li>Track caffeine timing and reduce late-day variance.</li>
+              </ol>
+            </details>
+          </section>
 
           <div class="chart-grid">
             <article class="chart-card">
