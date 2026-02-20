@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Body as a Distributed System | Madhura Belli</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="hero hero-project">
+    <p class="eyebrow">Project</p>
+    <h1>The Body as a Distributed System</h1>
+    <p class="subtitle">A systems-thinking exploration of physiology through the lens of reliability engineering.</p>
+    <p class="status-pill">Status: MVP Scaffold</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This project frames the human body as a distributed platform where organs are services, signals are events,
+        and homeostasis is reliability. The goal is to make biological behavior easier to reason about using familiar
+        software operations metaphors.
+      </p>
+    </section>
+
+    <section>
+      <h2>Bio SRE Console (Dashboard MVP)</h2>
+      <p class="muted">Static data first — interactive controls and real data plumbing are planned for later steps.</p>
+
+      <div class="console-shell">
+        <div class="console-topbar">
+          <span>Bio SRE Console</span>
+          <span class="console-env">env: human-prod</span>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <h3>Heart Rate</h3>
+            <p class="kpi-value">72 bpm</p>
+            <p class="kpi-meta">SLO: 60-100 bpm</p>
+          </article>
+          <article class="kpi-card">
+            <h3>Blood Oxygen</h3>
+            <p class="kpi-value">98%</p>
+            <p class="kpi-meta">SLO: &gt;95%</p>
+          </article>
+          <article class="kpi-card">
+            <h3>Respiration</h3>
+            <p class="kpi-value">15 rpm</p>
+            <p class="kpi-meta">SLO: 12-20 rpm</p>
+          </article>
+          <article class="kpi-card">
+            <h3>System Load</h3>
+            <p class="kpi-value">Moderate</p>
+            <p class="kpi-meta">Context: post-lunch</p>
+          </article>
+        </div>
+
+        <div class="log-panel">
+          <h3>Event Log</h3>
+          <ul>
+            <li><code>12:01:03</code> autonomic-controller scaled heart-rate response +3%</li>
+            <li><code>12:01:10</code> glucose-router accepted nutrient payload from digestive-edge</li>
+            <li><code>12:02:04</code> thermoregulator reconciled temperature drift (36.9°C)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="todo-block">
+      <h2>TODO (Next Iterations)</h2>
+      <ul>
+        <li>Replace hardcoded KPI/log entries with static JSON + template rendering.</li>
+        <li>Add subsystem filters (cardio / neural / immune) and state badges.</li>
+        <li>Introduce architecture diagram and failure-mode narrative.</li>
+      </ul>
+    </section>
+
+    <p><a href="../index.html">← Back to portfolio</a></p>
+  </main>
+</body>
+</html>
