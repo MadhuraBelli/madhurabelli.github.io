@@ -416,3 +416,8 @@ footer {
 .architecture-figure figcaption {
   margin-top: 8px;
 }
+
+.diagram-fallback-link {
+  margin: 6px 0 0;
+  font-size: 0.92rem;
+}
