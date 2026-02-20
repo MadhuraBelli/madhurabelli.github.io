@@ -99,6 +99,24 @@ a {
   margin-top: 8px;
 }
 
+.status-pill[data-status="stable"] {
+  background: rgba(66, 209, 130, 0.18);
+  border-color: #2f915f;
+  color: #b5f2cd;
+}
+
+.status-pill[data-status="recovering"] {
+  background: rgba(255, 190, 87, 0.2);
+  border-color: #b17b2f;
+  color: #ffe2aa;
+}
+
+.status-pill[data-status="overloaded"] {
+  background: rgba(255, 114, 114, 0.2);
+  border-color: #b44f4f;
+  color: #ffb9b9;
+}
+
 .muted {
   color: var(--muted);
   font-size: 14px;
@@ -162,9 +180,67 @@ a {
 
 .chart-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
   padding: 0 12px 12px;
+}
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  background: #0c1527;
+  border: 1px solid #273a5c;
+  border-radius: 8px;
+}
+
+.chart-axis {
+  stroke: #2f456b;
+  stroke-width: 1;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #c0d4f5;
+}
+
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chart-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+}
+
+.axis-caption {
+  font-size: 12px;
+  color: #97a8c5;
+  margin: 8px 0 0;
+}
+
+.corr-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.corr-table th,
+.corr-table td {
+  border: 1px solid #2d3f61;
+  padding: 6px;
+  text-align: center;
+}
+
+.corr-table th {
+  background: #15223a;
 }
 
 .bar-row {
